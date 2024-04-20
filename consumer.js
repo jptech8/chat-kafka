@@ -16,8 +16,8 @@ rl.question('Enter topic: ', (topic) => {
 
   consumer.on('message', function (message) {
     console.log('Topic:', message.topic);
-    console.log('Value', message.value);
-    console.log('Offset', message.offset);
+    console.log('Value:', message.value);
+    console.log('Offset:', message.offset);
 
   });
 
