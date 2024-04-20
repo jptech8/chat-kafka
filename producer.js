@@ -14,8 +14,7 @@ const rl = createInterface({
 producer.on('ready', function () {
   rl.question('Enter topic: ', (topic) => {
     rl.question('Enter message: ', (message) => {
-      // Ensure producer is ready before sending messages
-      // Create the message payload with the retrieved topic and message
+
       const payloads = [
         { topic, messages: message } // No need to stringify message
       ];
