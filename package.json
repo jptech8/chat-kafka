@@ -1,12 +1,11 @@
 {
-  "name": "test",
+  "name": "kafka-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Kafka producer and consumer",
   "main": "index.js",
   "scripts": {
-    "producer": "nodemon producer.js",
-    "consumer": "nodemon consumer.js",
-    "local": "nodemon index.js",
+    "producer": "nodemon cmdcli/producer.cli.js",
+    "consumer": "nodemon cmdcli/consumer.cli.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "kafka-node": "^5.0.0",
+    "kafkajs": "^2.2.4",
     "koa": "^2.15.3",
     "koa-body": "^6.0.1",
     "koa-bodyparser": "^4.4.1",
